@@ -15,7 +15,7 @@ MySQL.ready(function()
 					['@label'] = v.label
 				})
 				for j=1, #resultAccess, 1 do
-					local xPlayer = GetAnyPlayerFromIdentifier(resultAccess[i].identifier)
+					local xPlayer = GetAnyPlayerFromIdentifier(resultAccess[j].identifier)
 					table.insert(v.accessPlayers, xPlayer)
 				end
 			end
